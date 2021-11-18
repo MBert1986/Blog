@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog MB</title>
+  </head>
+  <body>
+    <h1>Blog MB</h1>
+
+    <h3>Posteos</h3>
+    {% for post in posts %}
+    <a href="{% url 'blog:detail' post.id %}">{{post.title}}</a>
+    <a href="{% url 'blog:update' post.id %}">Actualizar</a>
+    <a href="{% url 'blog:delete' post.id %}">Borrar</a>    
+    <br>
+    {% endfor %}
+    <p>
+        <a href="{% url 'blog:create' %}">Nuevo Post</a>
+    </p>
+    
+  </body>
+</html>

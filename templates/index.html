@@ -1,1 +1,18 @@
-hola
+{% extends 'base.html' %}
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog MB</title>
+  </head>
+  <body>
+    {% block content %}
+    <h1>Bienvenidos</h1>
+    <p>
+      Visita mi
+      <a class="text-blue-700 bg-gray-300" href="{% url 'blog:home' %}">
+        blog personal aqui
+      </a>
+    </p>
+  </body>
+  {% endblock content%}
+</html>

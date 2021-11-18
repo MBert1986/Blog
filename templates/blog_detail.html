@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog MB</title>
+  </head>
+  <body>
+    <h1>Blog MB</h1>
+
+    <h3>{{post.title}}</h3>
+    <p>
+        {{post.content}}
+    </p>
+    
+    <a href="{% url 'blog:home' %}">Volver</a>
+  </body>
+</html>

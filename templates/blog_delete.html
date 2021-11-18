@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog MB</title>
+  </head>
+
+  <body>
+    <h1>Blog MB</h1>
+
+    <form method="POST">
+    {% csrf_token %}
+    
+    <h3>Eliminar Posteo</h3>
+   <div>
+      {{form}}
+    </div>
+    <br>
+    <button type='submit'>Eliminar</button>
+    </form>
+
+  </body>
+</html>
